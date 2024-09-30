@@ -1,0 +1,205 @@
+:root {
+    --teal-color: #45baba;
+    --light-teal: black;
+    --white-color: #ffffff;
+    --gray-color: #f4f4f4;
+    --dark-color: #333;
+    --caribbean-current: #3C6E71;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    max-width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo img {
+    max-height: 90px;
+    width: auto;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-menu li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.5rem !important;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menu li a:hover {
+    color: var(--light-teal);
+  }
+  
+  .navbar-menu li.active a {
+    position: relative;
+    color: var(--white-color);
+  }
+  
+  .navbar-menu li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-color);
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--teal-color);
+        width: 200px;
+        height: 10vh;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+  
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navbar-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: var(--white-color);
+        transition: transform 0.3s ease;
+    }
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    background-color: var(--caribbean-current);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.3s ease-in-out;
+    height: 10vh;
+  }
+  
+  .navbar-logo img {
+    height: 85px;
+    width: auto;
+    display: block;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+  }
+  
+  .navbar-menu li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menu li a:hover {
+    color: var(--light-teal);
+  }
+  
+  .navbar-menu li.active a {
+    position: relative;
+    color: var(--white-color);
+  }
+  
+  .navbar-menu li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-color);
+  }
+  
+  .navbar-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    color: black;
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: var(--white-color);
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--teal-color);
+        width: 200px;
+        height: 10vh;
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
+  
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navbar-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: var(--white-color);
+        transition: transform 0.3s ease;
+    }
+  }
