@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <Router 
-    // basename="/Portfolio"
+    basename="/portfolio"
     >
       <Navbar />
       <Routes>
